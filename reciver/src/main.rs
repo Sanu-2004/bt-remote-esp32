@@ -10,7 +10,7 @@ use std::process::Command;
 const SERVICE_UUID: uuid::Uuid = uuid::Uuid::from_u128(0x4fafc201_1fb5_459e_8fcc_c5c9c331914b);
 const CHARACTERISTIC_UUID: uuid::Uuid = uuid::Uuid::from_u128(0xbeb5483e_36e1_4688_b7f5_ea07361b26a8);
 const ESP32_NAME: &str = "ESP32_Remote";
-const CONNECTION_CHECK_INTERVAL: Duration = Duration::from_secs(10); // Check every 10 seconds
+const CONNECTION_CHECK_INTERVAL: Duration = Duration::from_secs(10);
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
