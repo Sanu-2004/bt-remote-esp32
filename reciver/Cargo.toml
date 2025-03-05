@@ -1,0 +1,10 @@
+[package]
+name = "reciver"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+btleplug = "0.10" # Or the latest version
+tokio = { version = "1", features = ["full"] } # Required for async runtime
+futures = "0.3" # Required for async/await
+uuid = { version = "1", features = ["v1", "v4"] }
